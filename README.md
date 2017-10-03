@@ -18,4 +18,4 @@ It is basically forwarding the media key events to the program.
 
 ## Contributing
 
-If you found any bugs or added new cool features like using a config file instead of hardcoding the values, feel free to create a pull request.
+If you have found any bugs or want to add new cool features like using a config file instead of hardcoding the values, feel free to create a pull request or open an issue.
