@@ -5,7 +5,8 @@ Global $mediaPlayerTitle = "REPLACE WITH WINDOW NAME"
 ; Keeps the program running
 Global $active = 1
 
-StartMediaPlayer()
+Global $hWnd = 0
+
 SetHotKeys()
 Loop()
 
