@@ -13,7 +13,10 @@ Loop()
 Func Loop()
    While $active
 	  ; Sleep here to keep the program active
-	  Sleep(100)
+	  Sleep(1000)
+	  If Not ($hWnd == 0) And Not WinExists($hWnd) Then
+		 $hWnd = 0
+	  EndIf
    WEnd
 EndFunc
 
