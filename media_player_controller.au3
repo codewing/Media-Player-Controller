@@ -1,14 +1,22 @@
+#include <MsgBoxConstants.au3>
+
 ; Media Player Path - Set according to your installation folder
-Global $mediaPlayerLocation = "PATH/TO/MEDIAPLAYER.exe"
-Global $mediaPlayerTitle = "REPLACE WITH WINDOW NAME"
+Global $mediaPlayerLocation = IniRead("settings.ini", "Main", "MediaPlayerLocation", "PATH/TO/MEDIAPLAYER.exe")
+Global $mediaPlayerTitle = IniRead("settings.ini", "Main", "MediaPlayerTitle", "REPLACE WITH WINDOW NAME")
 
 ; Keeps the program running
 Global $active = 1
 
 Global $hWnd = 0
 
-SetHotKeys()
-Loop()
+If StringCompare($mediaPlayerLocation, "PATH/TO/MEDIAPLAYER.exe") == 0 Or StringCompare($mediaPlayerTitle, "REPLACE WITH WINDOW NAME") == 0 Then
+   ; display error and let the program terminate
+   MsgBox($MB_SYSTEMMODAL, "Error in configuration!", "Please set the path to the mediaplayer executable and its window title in the settings.ini file!")
+Else
+   ; Keep program alive
+   SetHotKeys()
+   Loop()
+EndIf
 
 Func Loop()
    While $active
