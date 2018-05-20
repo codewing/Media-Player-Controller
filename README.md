@@ -8,8 +8,10 @@ It is basically forwarding the media key events to the program.
 - Download the [latest release](https://github.com/codewing/Media-Player-Controller/releases/latest)
 - Change the settings file to your needs.
   - For Plex Media Player it could be something like:   
-    ``` MediaPlayerLocation="C:\Program Files (x86)\Plex Media Player\PlexMediaPlayer.exe" 
-		MediaPlayerTitle="Plex Media Player"```
+    ```
+    MediaPlayerLocation="C:\Program Files (x86)\Plex Media Player\PlexMediaPlayer.exe"
+    MediaPlayerTitle="Plex Media Player"
+    ```
 - Run the media player controller executable
 
 ## Setup
@@ -17,8 +19,10 @@ It is basically forwarding the media key events to the program.
 - Install [AutoIt](https://www.autoitscript.com/site/autoit/downloads/)
 - Change the settings file to your needs.
   - For Plex Media Player it could be something like:   
-    ``` MediaPlayerLocation="C:\Program Files (x86)\Plex Media Player\PlexMediaPlayer.exe" 
-		MediaPlayerTitle="Plex Media Player"```   
+    ```
+    MediaPlayerLocation="C:\Program Files (x86)\Plex Media Player\PlexMediaPlayer.exe"
+    MediaPlayerTitle="Plex Media Player"
+    ```  
 - Compile the code
   - You can do this via the SciTE Editor which comes with the AutoIT installation.  
   Open the file with the editor and click on [Tools] -> [Build]  
